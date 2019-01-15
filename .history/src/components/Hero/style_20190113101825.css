@@ -1,0 +1,44 @@
+.hero {
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  top: 100px;
+  text-align: center;
+  z-index: -1;
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  opacity: .4;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: black;
+}
+
+.hero * {
+  position: absolute;
+  z-index: 2;
+}
+
+.hero h2 {
+  top: 30%;
+  left: 40%;
+  color: white;
+
+}
+.hero span {
+  top: 35%;
+  left: 30%;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 60px;
+  padding-top: 140px;
+  margin-top: 0;
+}

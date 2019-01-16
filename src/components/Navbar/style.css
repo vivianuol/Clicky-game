@@ -5,4 +5,13 @@
     height: 100px;
     background-color: darkslateblue;
     color: whitesmoke;
+    z-index: 5
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 24px;
   }

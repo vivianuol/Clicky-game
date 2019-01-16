@@ -1,9 +1,21 @@
+
+.wrapper {
+    position:relative;
+    top:100px;
+    margin: 10px auto;
+    width: 80%;
+    
+}
+
 .cards-layout {
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
 }
 
 .item {
     width: 300px;
+    margin: 10px;
 }

@@ -32,8 +32,7 @@ class Cards extends React.Component {
             imageLoc: "/images/MarieCat.png",
             charName: "MarieCat"
         }],
-        clickedChars:[],
-        topScore: 0
+        clickedChars:[]
         }
     }
 
@@ -51,18 +50,22 @@ class Cards extends React.Component {
 
     handleOnClick = e => {
         console.log(e.target.alt + ", onclick!");
+        console.log("clickedCharsAmount: " +this.state.clickedChars.length);
         console.log("clickedChars: " + this.state.clickedChars);
-        console.log(this.state.clickedChars.indexOf(e.target.alt));
+        console.log("indexOf: " + this.state.clickedChars.indexOf(e.target.alt));
         if(this.state.clickedChars.length > 0 && this.state.clickedChars.indexOf(e.target.alt) >= 0) {
-           // resetClickedChars()
+           this.resetClickedChars()
+           console.log("existing img clicked.")
         } else {
             let newArr = this.shuffle(this.state.arr);
             this.setState({
                 arr: newArr, 
-                clickedChars: [...this.state.clickedChars, e.target.alt],
-                topScore: topScore+1
+                clickedChars: [...this.state.clickedChars, e.target.alt]
             })
+            console.log("new img clicked.")
+
         }
+        this.props.callbackFromParent(this.state.clickedChars.length);
     }
 
     resetClickedChars () {
@@ -74,7 +77,7 @@ class Cards extends React.Component {
 
         render() {
             return (
-                <div className="cards-layout">
+                <div className="cards-layout wrapper">
                   {this.state.arr.map((item, i) => <Cartoon imageLoc={item.imageLoc} charName={item.charName} key={i} handleClick={this.handleOnClick} />)}
                 </div>
             )

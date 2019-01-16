@@ -1,17 +1,38 @@
 import React, { Component } from 'react';
 import './App.css';
-import Navbar from "./components/Navbar/index";
+import Navbar from "./components/Navbar";
 import Hero from "./components/Hero/index";
 import Cards from "./components/Cards";
 import Footer from "./components/Footer/index";
 
 class App extends Component {
+  constructor (props) {
+    super(props);
+    this.state ={
+      score: 0,
+      topScore: 0
+    }
+  }
+
+  myCallback = dataFromCards => {
+      this.setState ({
+        score: dataFromCards
+      })
+    if(dataFromCards > this.state.topScore) {
+      this.setState  ({
+        topScore: dataFromCards
+      })
+    }
+}
+
+
+ 
   render() {
     return (
       <div>
-        <Navbar />
+        <Navbar score= {this.state.score} topScore={this.state.topScore} />
         <Hero />
-        <Cards />
+        <Cards callbackFromParent={this.myCallback} />
         <Footer />
       </div>
     )

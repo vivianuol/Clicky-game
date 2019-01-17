@@ -2,45 +2,30 @@ import React from "react";
 import Cartoon from "./Cartoon";
 import "./style.css";
 
-import Minions from "/src/images/Minions.png";
-import Doraemon from "/src/images/Doraemon.png";
-import SuperMareo from "/src/images/super_mareo.png";
-import Spongebob_Squarepants from "/src/images/Spongebob_Squarepants.png";
-import SpongeBob_Transparent from "/src/images/SpongeBob_Transparent.png";
-import Pikachu from "/src/images/pikachu.png";
-import Sally_Brown from "/src/images/Sally_Brown.png";
-import MarieCat from "/src/images/MarieCat.png";
-
 
 class Cards extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = {arr: [{
-            imageLoc: Minions,
-            charName: "Minions"
-        }, {
-            imageLoc: Doraemon,
-            charName: "Doraemon"
-        }, {
-            imageLoc: SuperMareo,
-            charName: "SuperMareo"
-        }, {
-            imageLoc: Spongebob_Squarepants,
-            charName: "Spongebob_Squarepants"
-        }, {
-            imageLoc: Pikachu,
-            charName: "Pikachu"
-        }, {
-            imageLoc: Sally_Brown,
-            charName: "Sally_Brown"
-        }, {
-            imageLoc: SpongeBob_Transparent,
-            charName: "SpongeBob_Transparent"
-        }, {
-            imageLoc: MarieCat,
-            charName: "MarieCat"
-        }],
+        this.state = {
+        arr: [
+            {charName: "Minions"}
+        ,       
+            {charName: "Doraemon"}
+        , 
+            {charName: "SuperMareo"}
+        ,
+            {charName: "Spongebob_Squarepants"}
+        , 
+            {charName: "Pikachu"}
+        , 
+            {charName: "Sally_Brown"}
+        , 
+            {charName: "SpongeBob_Transparent"}
+        ,           
+            {charName: "MarieCat"}
+        ],
+
         clickedChars:[]
         }
     }
@@ -87,7 +72,7 @@ class Cards extends React.Component {
         render() {
             return (
                 <div className="cards-layout wrapper">
-                  {this.state.arr.map((item, i) => <Cartoon imageLoc={item.imageLoc} charName={item.charName} key={i} handleClick={this.handleOnClick} />)}
+                  {this.state.arr.map((item, i) => <Cartoon id={item.charName} key={i} handleClick={this.handleOnClick} />)}
                 </div>
             )
         }

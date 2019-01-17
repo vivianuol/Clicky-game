@@ -19,3 +19,30 @@
     width: 300px;
     margin: 10px;
 }
+
+#Minions {
+    background-image: url('./../../images/Minions.png');
+};
+
+#Doraemon {
+    background-image: url('./../../images/Doraemon.png');
+}
+#SuperMareo {
+    background-image: url('./../../images/SuperMareo.png');
+}
+#Spongebob_Squarepants {
+    background-image: url('./../../images/Spongebob_Squarepants.png');
+}
+#SpongeBob_Transparent {
+    background-image: url('./../../images/SpongeBob_Transparent.png');
+}
+#Pikachu {
+    background-image: url('./../../images/Pikachu.png');
+}
+#Sally_Brown {
+    background-image: url('./../../images/Sally_Brown.png');
+}
+#MarieCat {
+    background-image: url('./../../images/MarieCat.png');
+}
+

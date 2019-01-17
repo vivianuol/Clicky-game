@@ -1,6 +1,15 @@
 import React from "react";
 import Cartoon from "./Cartoon";
-import "./style.css"
+import "./style.css";
+
+import Minions from "../../images/Minions.png";
+import Doraemon from "../../images/Doraemon.png";
+import SuperMareo from "../../images/super_mareo.png";
+import Spongebob_Squarepants from "../../images/Spongebob_Squarepants.png";
+import SpongeBob_Transparent from "../../images/SpongeBob_Transparent.png";
+import Pikachu from "../../images/pikachu.png";
+import Sally_Brown from "../../images/Sally_Brown.png";
+import MarieCat from "../../images/MarieCat.png";
 
 
 class Cards extends React.Component {
@@ -8,28 +17,28 @@ class Cards extends React.Component {
     constructor(props) {
         super(props);
         this.state = {arr: [{
-            imageLoc: "/Cliky-game/images/doraemon.png",
-            charName: "doraemon"
-        }, {
-            imageLoc: "/Cliky-game/images/super_mareo.png",
-            charName: "super_mareo"
-        }, {
-            imageLoc: "/Cliky-game/images/Spongebob_Squarepants.png",
-            charName: "Spongebob_Squarepants"
-        }, {
-            imageLoc: "/Cliky-game/images/SpongeBob_Transparent.png",
-            charName: "SpongeBob_Transparent"
-        }, {
-            imageLoc: "/Cliky-game/images/pikachu.png",
-            charName: "pikachu"
-        }, {
-            imageLoc: "/Cliky-game/images/Sally_Brown.png",
-            charName: "Sally_Brown"
-        }, {
-            imageLoc: "/Cliky-game/images/Minions.png",
+            imageLoc: Minions,
             charName: "Minions"
         }, {
-            imageLoc: "/Cliky-game/images/MarieCat.png",
+            imageLoc: Doraemon,
+            charName: "Doraemon"
+        }, {
+            imageLoc: SuperMareo,
+            charName: "SuperMareo"
+        }, {
+            imageLoc: Spongebob_Squarepants,
+            charName: "Spongebob_Squarepants"
+        }, {
+            imageLoc: Pikachu,
+            charName: "Pikachu"
+        }, {
+            imageLoc: Sally_Brown,
+            charName: "Sally_Brown"
+        }, {
+            imageLoc: SpongeBob_Transparent,
+            charName: "SpongeBob_Transparent"
+        }, {
+            imageLoc: MarieCat,
             charName: "MarieCat"
         }],
         clickedChars:[]

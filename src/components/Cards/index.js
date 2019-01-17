@@ -2,14 +2,14 @@ import React from "react";
 import Cartoon from "./Cartoon";
 import "./style.css";
 
-import Minions from "../../images/Minions.png";
-import Doraemon from "../../images/Doraemon.png";
-import SuperMareo from "../../images/super_mareo.png";
-import Spongebob_Squarepants from "../../images/Spongebob_Squarepants.png";
-import SpongeBob_Transparent from "../../images/SpongeBob_Transparent.png";
-import Pikachu from "../../images/pikachu.png";
-import Sally_Brown from "../../images/Sally_Brown.png";
-import MarieCat from "../../images/MarieCat.png";
+import Minions from "../../../images/Minions.png";
+import Doraemon from "../../../images/Doraemon.png";
+import SuperMareo from "../../../images/super_mareo.png";
+import Spongebob_Squarepants from "../../../images/Spongebob_Squarepants.png";
+import SpongeBob_Transparent from "../../../images/SpongeBob_Transparent.png";
+import Pikachu from "../../../images/pikachu.png";
+import Sally_Brown from "../../../images/Sally_Brown.png";
+import MarieCat from "../../../images/MarieCat.png";
 
 
 class Cards extends React.Component {

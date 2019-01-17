@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero/index";
+import Hero from "./components/Hero";
 import Cards from "./components/Cards";
-import Footer from "./components/Footer/index";
+import Footer from "./components/Footer";
 
 class App extends Component {
   constructor (props) {

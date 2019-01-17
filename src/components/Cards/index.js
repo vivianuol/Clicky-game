@@ -9,21 +9,21 @@ class Cards extends React.Component {
         super(props);
         this.state = {
         arr: [
-            {charName: "Minions"}
+             "Minions"
         ,       
-            {charName: "Doraemon"}
+             "Smurfs"
         , 
-            {charName: "SuperMareo"}
+             "SuperMareo"
         ,
-            {charName: "Spongebob_Squarepants"}
+             "Spongebob_Squarepants"
         , 
-            {charName: "Pikachu"}
+            "Pikachu"
         , 
-            {charName: "Sally_Brown"}
+             "Sally_Brown"
         , 
-            {charName: "SpongeBob_Transparent"}
+             "SpongeBob_Transparent"
         ,           
-            {charName: "MarieCat"}
+            "MarieCat"
         ],
 
         clickedChars:[]
@@ -72,7 +72,7 @@ class Cards extends React.Component {
         render() {
             return (
                 <div className="cards-layout wrapper">
-                  {this.state.arr.map((item, i) => <Cartoon id={item.charName} key={i} handleClick={this.handleOnClick} />)}
+                  {this.state.arr.map((item, i) => <Cartoon id={item} key={i} handleClick={this.handleOnClick} />)}
                 </div>
             )
         }

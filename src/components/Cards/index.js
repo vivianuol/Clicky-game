@@ -8,28 +8,28 @@ class Cards extends React.Component {
     constructor(props) {
         super(props);
         this.state = {arr: [{
-            imageLoc: "/Cliky-game/public/images/doraemon.png",
+            imageLoc: "/Cliky-game/images/doraemon.png",
             charName: "doraemon"
         }, {
-            imageLoc: "/Cliky-game/public/images/super_mareo.png",
+            imageLoc: "/Cliky-game/images/super_mareo.png",
             charName: "super_mareo"
         }, {
-            imageLoc: "/Cliky-game/public/images/Spongebob_Squarepants.png",
+            imageLoc: "/Cliky-game/images/Spongebob_Squarepants.png",
             charName: "Spongebob_Squarepants"
         }, {
-            imageLoc: "/Cliky-game/public/images/SpongeBob_Transparent.png",
+            imageLoc: "/Cliky-game/images/SpongeBob_Transparent.png",
             charName: "SpongeBob_Transparent"
         }, {
-            imageLoc: "/Cliky-game/public/images/pikachu.png",
+            imageLoc: "/Cliky-game/images/pikachu.png",
             charName: "pikachu"
         }, {
-            imageLoc: "/Cliky-game/public/images/Sally_Brown.png",
+            imageLoc: "/Cliky-game/images/Sally_Brown.png",
             charName: "Sally_Brown"
         }, {
-            imageLoc: "/Cliky-game/public/images/Minions.png",
+            imageLoc: "/Cliky-game/images/Minions.png",
             charName: "Minions"
         }, {
-            imageLoc: "/Cliky-game/public/images/MarieCat.png",
+            imageLoc: "/Cliky-game/images/MarieCat.png",
             charName: "MarieCat"
         }],
         clickedChars:[]

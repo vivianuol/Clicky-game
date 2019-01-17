@@ -8,10 +8,10 @@ Don't click the same card twice!
 
 
 ### Technologies used
-React
-ES6
-React-Bootstrap
-CSS
+* React
+* ES6
+* React-Bootstrap
+* CSS
 
 
 ### Use this link to play:

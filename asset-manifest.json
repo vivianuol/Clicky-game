@@ -1,14 +1,14 @@
 {
-  "main.css": "/Clicky-game/static/css/main.82f2868d.chunk.css",
-  "main.js": "/Clicky-game/static/js/main.aacdc102.chunk.js",
-  "main.js.map": "/Clicky-game/static/js/main.aacdc102.chunk.js.map",
+  "main.css": "/Clicky-game/static/css/main.df397f2e.chunk.css",
+  "main.js": "/Clicky-game/static/js/main.aef1d1c2.chunk.js",
+  "main.js.map": "/Clicky-game/static/js/main.aef1d1c2.chunk.js.map",
   "static/js/1.21e8723d.chunk.js": "/Clicky-game/static/js/1.21e8723d.chunk.js",
   "static/js/1.21e8723d.chunk.js.map": "/Clicky-game/static/js/1.21e8723d.chunk.js.map",
   "runtime~main.js": "/Clicky-game/static/js/runtime~main.0bb66f98.js",
   "runtime~main.js.map": "/Clicky-game/static/js/runtime~main.0bb66f98.js.map",
-  "static/media/style.css": "/Clicky-game/static/media/Smurfs.2a6de937.png",
-  "static/css/main.82f2868d.chunk.css.map": "/Clicky-game/static/css/main.82f2868d.chunk.css.map",
+  "static/media/style.css": "/Clicky-game/static/media/Minions.53c7f604.png",
+  "static/css/main.df397f2e.chunk.css.map": "/Clicky-game/static/css/main.df397f2e.chunk.css.map",
   "index.html": "/Clicky-game/index.html",
-  "precache-manifest.e73c3fa110efc3735fd046700d608ddc.js": "/Clicky-game/precache-manifest.e73c3fa110efc3735fd046700d608ddc.js",
+  "precache-manifest.2b3f51b2702830374be0d2555c4b2ea3.js": "/Clicky-game/precache-manifest.2b3f51b2702830374be0d2555c4b2ea3.js",
   "service-worker.js": "/Clicky-game/service-worker.js"
 }

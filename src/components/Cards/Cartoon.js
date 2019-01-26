@@ -3,8 +3,8 @@ import React from "react";
 
 function Cartoon(props) {
     return (
-        <div className="item" onClick = {props.handleClick} >
-            <div className="image" id={props.id}  ></div>
+        <div className="item"  >
+            <div className="image" onClick = {props.handleClick} id={props.id}  ></div>
         </div>
     );
 }

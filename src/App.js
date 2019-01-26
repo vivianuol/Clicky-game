@@ -15,9 +15,22 @@ class App extends Component {
   }
 
   myCallback = dataFromCards => {
+    console.log ( "dataFromCards:" +dataFromCards);
+    console.log( "score: " +this.state.score);
+    if (dataFromCards === this.state.score) {
+      this.setState ({
+        score: 0
+      })
+    }
+    
+    else if(dataFromCards > this.state.score) {
       this.setState ({
         score: dataFromCards
       })
+    } else {
+      throw("error");
+    }
+
     if(dataFromCards > this.state.topScore) {
       this.setState  ({
         topScore: dataFromCards

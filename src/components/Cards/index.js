@@ -26,7 +26,8 @@ class Cards extends React.Component {
             "MarieCat"
         ],
 
-        clickedChars:[]
+        clickedChars:[],
+        updatedScore:0
         }
     }
 
@@ -43,24 +44,30 @@ class Cards extends React.Component {
        }
 
     handleOnClick = e => {
-        console.log(e.target.alt + ", onclick!");
+        const id = e.target.id;
+        console.log(id + ", onclick!");
         console.log("clickedCharsAmount: " +this.state.clickedChars.length);
         console.log("clickedChars: " + this.state.clickedChars);
-        console.log("indexOf: " + this.state.clickedChars.indexOf(e.target.alt));
-        if(this.state.clickedChars.length > 0 && this.state.clickedChars.indexOf(e.target.alt) >= 0) {
+        console.log("indexOf: " + this.state.clickedChars.indexOf(id));
+        const clickedLength = this.state.clickedChars.length;
+        if(clickedLength > 0 && this.state.clickedChars.indexOf(id) >= 0) {
            this.resetClickedChars()
            console.log("existing img clicked.")
+           this.props.callbackFromParent(clickedLength);
         } else {
             let newArr = this.shuffle(this.state.arr);
             this.setState({
                 arr: newArr, 
-                clickedChars: [...this.state.clickedChars, e.target.alt]
+                clickedChars: [...this.state.clickedChars, id]
             })
             console.log("new img clicked.")
-
+            console.log(clickedLength+1);
+            this.props.callbackFromParent(clickedLength+1);
         }
-        this.props.callbackFromParent(this.state.clickedChars.length);
+        
     }
+
+    
 
     resetClickedChars () {
         this.setState({

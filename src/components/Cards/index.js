@@ -1,12 +1,11 @@
 import React from "react";
-import Cartoon from "./Cartoon";
+import Cartoon from "../../container/Cartoon";
 import "./style.css";
 
-
-function Cards(props) {
+function Cards(props){
     return (
         <div className="cards-layout wrapper">
-            {this.props.arr.map((item, i) => <Cartoon id={item} key={i} />)}
+            {props.arr.map((item, i) => <Cartoon id={item} key={i} />)}
         </div>
     )
 }

@@ -1,29 +1,63 @@
 import C from '../constants'
 import { combineReducers } from 'redux'
 
-export const gameState = (state={
-                            allChars: ["Minions"
-                            ,       
-                                 "Smurfs"
-                            , 
-                                 "SuperMareo"
-                            ,
-                                 "Spongebob_Squarepants"
-                            , 
-                                "Pikachu"
-                            , 
-                                 "Sally_Brown"
-                            , 
-                                 "SpongeBob_Transparent"
-                            ,           
-                                "MarieCat"], 
-                            clickedChars: [], 
-                            score: 0,
-                            topScore: 0
-                            }, action) => {
-    (action.type === C.CLICK_IMAGE) ?
-        [...state, action.payload] :
+const allChars = (state=["Minions",       
+                          "Smurfs"
+                      , 
+                          "SuperMareo"
+                      ,
+                          "Spongebob_Squarepants"
+                      , 
+                          "Pikachu"
+                      , 
+                          "Sally_Brown"
+                      , 
+                          "SpongeBob_Transparent"
+                      ,           
+                          "MarieCat"], action) => {
+        return (action.type === C.CLICK_IMAGE) ?
+        shuffle(state):
         state
+                          }
+
+const clickedChars = (state=[], action) => {
+  switch(action.type) {
+    case C.CLICKED_PREVIOUS_IMAGE:
+      return []
+    case C.CLICK_IMAGE:
+      return [...state, C.CLICK_IMAGE.payload]
+    default:
+      return state
+  }
 }
 
-export default combineReducers({gameState})
+const currentRecord = (state={score: 0, topScore: 0}, action) => {
+  switch(action.type) {
+    case C.CLICKED_PREVIOUS_IMAGE:
+      return state.score > state.topScore ?
+        {score: 0, topScore: state.score} :
+        { ...state, score: 0 }
+    case C.CLICK_IMAGE:
+      return { ...state, score: state.score + 1 };
+    default:
+      return state
+  }
+}
+
+function shuffle(posts){
+  console.log("shuffled!")
+  ///shuffle using some algo
+  const result = posts.slice();
+  let i = result.length - 1;
+  for (; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    const temp = result[i];
+    result[i] = result[j];
+    result[j] = temp;
+  }
+  console.log(result)
+ return result
+ }
+
+
+export default combineReducers({allChars, clickedChars, currentRecord })

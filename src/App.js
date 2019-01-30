@@ -1,20 +1,25 @@
 import React, { Component } from 'react';
 import './App.css';
-import Navbar from "./components/Navbar";
+import Navbar from "./container/Navbar";
 import Hero from "./components/Hero";
-import Cards from "./components/Cards";
+import Cards from "./container/Cards";
 import Footer from "./components/Footer";
+import { Provider } from 'react-redux';
+import storeFactory from './store'
+
+const store = storeFactory()
 
 class App extends Component {
 
   render() {
-    return (
-      <div>
-        <Navbar score= {this.state.score} topScore={this.state.topScore} />
-        <Hero />
-        <Cards callbackFromParent={this.myCallback} />
-        <Footer />
-      </div>
+    return (<Provider store={store}>
+        <div>
+          <Navbar/>
+          <Hero />
+          <Cards/>
+          <Footer />
+        </div>
+        </Provider>
     )
   }
 }

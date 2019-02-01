@@ -6,3 +6,9 @@ export function clickImage(charName) {
       payload: charName
     }
 }
+
+export function clickedPreviousImage() {
+  return {
+    type: C.CLICKED_PREVIOUS_IMAGE
+  }
+}

@@ -25,7 +25,7 @@ const clickedChars = (state=[], action) => {
     case C.CLICKED_PREVIOUS_IMAGE:
       return []
     case C.CLICK_IMAGE:
-      return [...state, C.CLICK_IMAGE.payload]
+      return [...state, action.payload]
     default:
       return state
   }
@@ -45,7 +45,6 @@ const currentRecord = (state={score: 0, topScore: 0}, action) => {
 }
 
 function shuffle(posts){
-  console.log("shuffled!")
   ///shuffle using some algo
   const result = posts.slice();
   let i = result.length - 1;
@@ -55,7 +54,6 @@ function shuffle(posts){
     result[i] = result[j];
     result[j] = temp;
   }
-  console.log(result)
  return result
  }
 

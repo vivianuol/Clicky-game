@@ -77,4 +77,9 @@
     background-position: center; 
 }
 
-
+#Simpson {
+    background-image: url('./../assets/images/Simpson.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+}

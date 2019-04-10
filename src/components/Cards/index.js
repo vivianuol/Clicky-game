@@ -24,10 +24,12 @@ class Cards extends React.Component {
              "SpongeBob_Transparent"
         ,           
             "MarieCat"
+        ,
+            "Simpson"
         ],
 
         clickedChars:[],
-        updatedScore:0
+        //updatedScore:0
         }
     }
 

@@ -12,7 +12,8 @@
 
 .hero h2, .hero h4 {
   
-  color: purple;
+  color: #ffe341;
+  font-family: Arial, Helvetica, sans-serif;
 
 }
 
@@ -21,6 +22,7 @@
   top: 200px;
   margin-left: 40%;
   font-size: 60px;
+  
 
 }
 

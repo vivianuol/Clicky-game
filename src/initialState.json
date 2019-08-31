@@ -1,0 +1,15 @@
+{
+    "allCards": ["Minions"
+        , "Smurfs"
+        , "SuperMareo"
+        , "Spongebob_Squarepants"
+        , "Pikachu"
+        , "Sally_Brown"
+        , "SpongeBob_Transparent"
+        , "MarieCat"],
+    "clickedCards":[],
+    "score": {
+        "score":0,
+        "topScore":0
+    }
+}
